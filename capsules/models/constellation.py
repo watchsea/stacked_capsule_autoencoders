@@ -31,8 +31,7 @@ from capsules import neural
 from capsules import plot
 from capsules import tensor_ops
 from capsules.eval import bipartite_match
-from capsules.models import model
-
+from capsules.models.model import Model
 tfd = tfp.distributions
 
 
@@ -116,7 +115,7 @@ class ConstellationCapsule(snt.AbstractModule):
     return res
 
 
-class ConstellationAutoencoder(model):
+class ConstellationAutoencoder(Model):
   """Capsule autoencoder."""
 
   def __init__(self,

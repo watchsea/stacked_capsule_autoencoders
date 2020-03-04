@@ -28,7 +28,7 @@ import tensorflow.compat.v1 as tf
 from tensorflow.compat.v1 import nest
 from tensorflow.compat.v1.io import gfile
 
-from stacked_capsule_autoencoders.capsules.train import tools as _tools
+from capsules.train import tools as _tools
 
 
 def make_grid(batch, grid_height=None, zoom=1, old_buffer=None, border_size=1):
