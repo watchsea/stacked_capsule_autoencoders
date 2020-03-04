@@ -19,12 +19,12 @@ from absl import flags
 from monty.collections import AttrDict
 import sonnet as snt
 import tensorflow.compat.v1 as tf
-from stacked_capsule_autoencoders.capsules import primary
-from stacked_capsule_autoencoders.capsules.attention import SetTransformer
-from stacked_capsule_autoencoders.capsules.models.constellation import ConstellationAutoencoder
-from stacked_capsule_autoencoders.capsules.models.constellation import ConstellationCapsule
-from stacked_capsule_autoencoders.capsules.models.scae import ImageAutoencoder
-from stacked_capsule_autoencoders.capsules.models.scae import ImageCapsule
+from capsules import primary
+from capsules.attention import SetTransformer
+from capsules.models.constellation import ConstellationAutoencoder
+from capsules.models.constellation import ConstellationCapsule
+from capsules.models.scae import ImageAutoencoder
+from capsules.models.scae import ImageCapsule
 
 flags.DEFINE_float('lr', 1e-4, 'Learning rate.')
 flags.DEFINE_boolean('use_lr_schedule', True, 'Uses learning rate schedule'

@@ -30,10 +30,10 @@ from absl import logging
 import numpy as np
 import tensorflow.compat.v1 as tf
 
-from stacked_capsule_autoencoders.capsules.configs import data_config
-from stacked_capsule_autoencoders.capsules.configs import model_config
-from stacked_capsule_autoencoders.capsules.train import create_hooks
-from stacked_capsule_autoencoders.capsules.train import tools
+from capsules.configs import data_config
+from capsules.configs import model_config
+from capsules.train.hooks import create_hooks
+from capsules.train import tools
 
 
 flags.DEFINE_string('dataset', 'mnist', 'Choose from: {mnist, constellation.}')

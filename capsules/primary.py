@@ -26,10 +26,10 @@ import sonnet as snt
 import tensorflow.compat.v1 as tf
 import tensorflow_probability as tfp
 
-from stacked_capsule_autoencoders.capsules import math_ops
-from stacked_capsule_autoencoders.capsules import neural
-from stacked_capsule_autoencoders.capsules import prob
-from stacked_capsule_autoencoders.capsules.tensor_ops import make_brodcastable
+from capsules import math_ops
+from capsules import neural
+from capsules import prob
+from capsules.tensor_ops import make_brodcastable
 from tensorflow.contrib import resampler as contrib_resampler
 
 tfd = tfp.distributions

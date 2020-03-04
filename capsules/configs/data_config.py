@@ -18,9 +18,9 @@ import functools
 from absl import flags
 from monty.collections import AttrDict
 import tensorflow.compat.v1 as tf
-from stacked_capsule_autoencoders.capsules.data import constellation
-from stacked_capsule_autoencoders.capsules.data import image
-from stacked_capsule_autoencoders.capsules.data import preprocess
+from capsules.data import constellation
+from capsules.data import image
+from capsules.data import preprocess
 
 flags.DEFINE_integer('batch_size', 32, 'batch size')
 flags.DEFINE_integer('canvas_size', 28, 'Canvas size.')

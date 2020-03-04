@@ -27,8 +27,8 @@ import tensorflow.compat.v1 as tf
 from tensorflow.compat.v1 import nest
 import tensorflow_probability as tfp
 
-from stacked_capsule_autoencoders.capsules import math_ops
-from stacked_capsule_autoencoders.capsules.neural import BatchMLP
+from capsules import math_ops
+from capsules.neural import BatchMLP
 
 tfd = tfp.distributions
 

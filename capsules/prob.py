@@ -24,8 +24,8 @@ import tensorflow.compat.v1 as tf
 from tensorflow.compat.v1 import nest
 import tensorflow_probability as tfp
 
-from stacked_capsule_autoencoders.capsules.math_ops import safe_log
-from stacked_capsule_autoencoders.capsules.tensor_ops import make_brodcastable
+from capsules.math_ops import safe_log
+from capsules.tensor_ops import make_brodcastable
 
 try:  # pylint:disable=g-statement-before-imports
   import functools32 as functools  # pylint:disable=g-import-not-at-top

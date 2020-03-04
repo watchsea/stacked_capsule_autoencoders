@@ -25,13 +25,13 @@ import tensorflow.compat.v1 as tf
 from tensorflow.compat.v1 import nest
 import tensorflow_probability as tfp
 
-from stacked_capsule_autoencoders.capsules import capsule as _capsule
-from stacked_capsule_autoencoders.capsules import math_ops
-from stacked_capsule_autoencoders.capsules import neural
-from stacked_capsule_autoencoders.capsules import plot
-from stacked_capsule_autoencoders.capsules import tensor_ops
-from stacked_capsule_autoencoders.capsules.eval import bipartite_match
-from stacked_capsule_autoencoders.capsules.models import Model
+from capsules import capsule as _capsule
+from capsules import math_ops
+from capsules import neural
+from capsules import plot
+from capsules import tensor_ops
+from capsules.eval import bipartite_match
+from capsules.models import model
 
 tfd = tfp.distributions
 
@@ -116,7 +116,7 @@ class ConstellationCapsule(snt.AbstractModule):
     return res
 
 
-class ConstellationAutoencoder(Model):
+class ConstellationAutoencoder(model):
   """Capsule autoencoder."""
 
   def __init__(self,

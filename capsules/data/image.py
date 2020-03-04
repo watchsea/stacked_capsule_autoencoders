@@ -26,7 +26,7 @@ from tensorflow.compat.v1 import nest
 import tensorflow_datasets as tfds
 
 
-from stacked_capsule_autoencoders.capsules.data import tfrecords as _tfrecords
+from capsules.data import tfrecords as _tfrecords
 
 
 def create(which,
